@@ -1,0 +1,98 @@
+/* ===== Global ===== */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #f0f0f0;
+}
+
+/* ===== Header ===== */
+header {
+  background: url('https://picsum.photos/1200/300') no-repeat center/cover;
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+header h1 {
+  margin: 0 0 20px 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* ===== Cards Container ===== */
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px 20px;
+}
+
+/* ===== Card ===== */
+.card {
+  background: url('https://picsum.photos/300/200?random') no-repeat center/cover;
+  width: 250px;
+  padding: 20px;
+  margin: 10px;
+  border: 3px solid #333;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  color: white;
+  text-align: center;
+}
+
+/* Text & Font Style */
+.card h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Button Display */
+.card button {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #333;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Priority */
+p { color: yellow; }          /* tag */
+.highlight p { color: orange; } /* class */
+#special { color: red; }      /* id */
+
+/* Descendant & Direct Child */
+.card p { font-style: italic; }      /* descendant */
+.card > p { text-decoration: underline; } /* direct child */
+.card span { font-weight: bold; color: cyan; }
+
+/* Footer */
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
