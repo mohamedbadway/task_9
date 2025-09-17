@@ -3,18 +3,14 @@ body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
   background: #f0f0f0;
+  text-align: center;
 }
 
 /* ===== Header ===== */
 header {
   background: url('https://picsum.photos/1200/300') no-repeat center/cover;
   color: white;
-  text-align: center;
   padding: 50px 20px;
-}
-
-header h1 {
-  margin: 0 0 20px 0;
 }
 
 nav ul {
@@ -35,24 +31,22 @@ nav ul li a {
 
 /* ===== Cards Container ===== */
 .cards-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  padding: 40px 20px;
+  padding: 40px 0;
 }
 
 /* ===== Card ===== */
 .card {
-  background: url('https://picsum.photos/300/200?random') no-repeat center/cover;
+  display: inline-block; /* arrange cards side by side */
   width: 250px;
   padding: 20px;
   margin: 10px;
+  background: url('https://picsum.photos/300/200?random') no-repeat center/cover;
   border: 3px solid #333;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.3);
   color: white;
   text-align: center;
+  vertical-align: top; /* مهم للـ inline-block */
 }
 
 /* Text & Font Style */
@@ -66,7 +60,7 @@ nav ul li a {
   line-height: 1.5;
 }
 
-/* Button Display */
+/* Button */
 .card button {
   display: inline-block;
   margin-top: 15px;
@@ -92,7 +86,7 @@ p { color: yellow; }          /* tag */
 footer {
   background: #333;
   color: white;
-  text-align: center;
   padding: 20px;
 }
+
 
